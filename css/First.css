@@ -1,0 +1,28 @@
+body{
+  background: #FFF8F2;
+  padding: 0;
+  margin-bottom: 10%;
+  font-family: Pavanam;
+}
+#content{
+  margin: 5% 10% 15% 10%;
+}
+#blog1{
+  grid-area: blog1;
+  float:left;
+  width: 60%;
+}
+#blognav{
+  grid-area: blognav;
+  float: right;
+  width: 30%;
+}
+#current{
+  color: #00ade7;
+  font-weight: 800;
+}
+#pic1{
+	height: 400px;
+	display: block;
+	margin: 0 auto;
+}

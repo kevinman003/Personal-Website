@@ -1,0 +1,142 @@
+/* old color was ##00ade7 */
+ body{
+	background: #fff;
+}
+#about{
+  color: #fff;
+  padding: 10px 50px 10px 50px;
+  height: 70%;
+  background: rgba(0,0,0,0.7);
+  margin: 0 30% 0 30%;
+}
+#self{
+  height: 200px;
+  border-radius: 500px;
+  opacity: 1;
+}
+#inside_pic{
+  height: 650px;
+  background-image: url("../img/mainbackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  text-align: center;
+}
+#inside_pic p{
+  text-align: left;
+	color: #fff;
+}
+.button{
+  background: #5ED2DE;
+  border: none;
+  color: #fff;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  font-family: Open Sans;
+  float: right;
+  text-decoration: none;
+  font-size: 14px;
+}
+.button:hover{
+  color: #5ED2DE;
+  background: #fff;
+  font-weight: bold;
+}
+#skills{
+	height: 500px;
+	display: grid;
+	padding: 5% 10% 0 10%;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas:
+	"html java light
+	htmltxt javatxt lighttxt";
+
+}
+#skills div{
+	padding: 10% 10% 0 10%;
+	margin: 0;
+	float: left;
+	text-align: center;
+	height: 100%;
+}
+#html, #java, #light{
+	height: 150px;
+}
+#html{grid-area: html; margin-bottom: 10%;}
+#java{grid-area: java; margin-bottom: 10%;}
+#light{grid-area: light; margin-bottom: 10%;}
+
+#htmltxt{grid-area: htmltxt; text-align: left;}
+#javatxt{grid-area: javatxt;}
+#lighttxt{grid-area: lighttxt;}
+
+#blogs{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-areas:
+	"featured prev";
+	padding: 5% 10% 0 10%;
+	grid-column-gap: 10%;
+  margin-bottom: 10%;
+  padding-bottom: 10%;
+  background-image: url("../img/typewriter.jpg");
+  background-size: cover;
+}
+
+#featured{
+  grid-area: featured;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  padding: 3% 8% 3% 8%;
+  width: 50%
+  border-radius: 30px;
+  opacity: 0.9;
+
+}
+
+#prev{
+	grid-area: prev;
+	padding: 3% 8% 3% 8%;
+	background: rgba(0,0,0,0.7);
+  color: #fff;
+}
+#script{
+	text-decoration: none;
+	color: #000;
+	cursor: default;
+}
+#banner{
+	background: #000;
+	color: #fff;
+	margin: 0;
+	padding: 1.5% 0;
+	text-align: center;
+	font-size: 250%;
+}
+#social i {
+  margin: 3%;
+  width: 20px;
+  font-size: 1.5em;
+  float: left;
+  color: #5ED2DE;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  border: solid #5ED2DE 2px;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#social i:hover{
+  color: #FFF;
+  border: solid #fff 2px;
+}
+#aboutme{
+  margin: 3.5% 10% 0 0;
+}
+.inside_bottom{
+
+}

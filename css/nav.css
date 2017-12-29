@@ -1,0 +1,8 @@
+body{  margin:0;  padding: 0;  font-family: Pavanam;}
+.wrapper{  overflow: hidden;  color: #fff;  background: #000;  height: auto;  padding: 0;}
+#logo{  padding: 5px 10%;   height: 70px;  float: left;}
+nav{	float: right;	padding: 0 10% 1% 10%;	padding: 5px 10% 1% 10%;	}
+nav li{  float: left;  display: block;  padding: 10px 5px 10px 5px;}
+nav li a {  text-decoration: none;  padding: 0 25px 20px 25px;  color: #fff;}
+nav li a:hover{  border-bottom: 2px #999 solid;  }
+.current{  background: #5ED2DE;  border-radius: 10px;}

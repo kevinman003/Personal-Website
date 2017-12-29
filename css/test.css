@@ -1,0 +1,22 @@
+#home{
+	display: block;
+	float:left;
+}
+#homep{
+	float: left;
+}
+#contact{
+	border: 1px solid #000;
+}
+#left{
+	float: left;
+}
+#middle{
+	background: #432109;
+	width: 300px;
+	height: 300px;
+	float: left;
+}
+#right{
+	float: left;
+}

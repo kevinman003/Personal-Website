@@ -1,0 +1,40 @@
+
+#top{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "pic info";
+  margin: 5% 5% 5% 20%;
+}
+#pic{
+  height: 200px;
+  float: left;
+  grid-area: pic;
+}
+#info{
+  float: right;
+  grid-area: info;
+  width: 60%;
+}
+h1 {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  font-size: 50px;
+}
+#education{
+  display: block;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#projects{
+  margin: 5% 20%;
+}
+#autoclass{
+  text-decoration: none;
+  color: #000;
+}
+#stockinfo{
+  text-decoration: none;
+  color: #000;
+}
