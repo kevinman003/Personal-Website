@@ -68,8 +68,8 @@
 #light{grid-area: light; margin-bottom: 10%;}
 
 #htmltxt{grid-area: htmltxt; text-align: left;}
-#javatxt{grid-area: javatxt;}
-#lighttxt{grid-area: lighttxt;}
+#javatxt{grid-area: javatxt; text-align: left;}
+#lighttxt{grid-area: lighttxt; text-align: left;}
 
 #blogs{
 	display: grid;
@@ -137,6 +137,10 @@
 #aboutme{
   margin: 3.5% 10% 0 0;
 }
-.inside_bottom{
-
+#resume{
+  margin: 3.5% 5% 0 0;
+}
+#first{
+  text-decoration: none;
+  color: #fff;
 }

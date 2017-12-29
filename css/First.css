@@ -26,3 +26,6 @@ body{
 	display: block;
 	margin: 0 auto;
 }
+#post{
+  margin: 10% auto;
+}
