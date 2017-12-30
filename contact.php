@@ -42,12 +42,12 @@ if(count($errors) == 0){
 $sql = "INSERT INTO contact (name, email, message, date) VALUES ('$name',
 '$email', '$message', '$date')";
 
-if(!mysqli_query($mysqli, $sql)){
+/*if(!mysqli_query($mysqli, $sql)){
 	echo "Not inserted" . mysqli_error($sql);
 }
 else{
 	echo "Inserted successfully";
-}
+}*/
 }
 ?>
 
