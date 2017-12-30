@@ -6,13 +6,13 @@ $db_pass = "kevin1234";
 $db_name = "epiz_21315340_contact";
 
 $mysqli = mysqli_connect("$db_host", "$db_username", "$db_pass", "$db_name") or die("Could not connect to MySQL");
-
+/*
  if (mysqli_connect_errno())
   {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
   } else {
   echo "Connected to MySQL";
-}
+}*/
 $errors = [];
 
 if($_POST['name'] == ""){
