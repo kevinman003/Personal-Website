@@ -1,9 +1,9 @@
 <?php
 
-$db_host = "localhost";
-$db_username = "root";
-$db_pass = "";
-$db_name = "contact";
+$db_host = "sql206.epizy.com";
+$db_username = "epiz_21315340";
+$db_pass = "kevin1234";
+$db_name = "epiz_21315340_contact";
 
 $mysqli = mysqli_connect("$db_host", "$db_username", "$db_pass", "$db_name") or die("Could not connect to MySQL");
 
@@ -39,17 +39,16 @@ date_default_timezone_set('America/Boise');
 $date = date('Y/m/d');
 if(count($errors) == 0){
 
-$sql = "INSERT INTO contactv2 (name, email, message, date) VALUES ('$name',
+$sql = "INSERT INTO contact (name, email, message, date) VALUES ('$name',
 '$email', '$message', '$date')";
 
 if(!mysqli_query($mysqli, $sql)){
-	echo "Not inserted";
+	echo "Not inserted" . mysqli_error($sql);
 }
 else{
 	echo "Inserted successfully";
 }
 }
-
 ?>
 
 <html>
