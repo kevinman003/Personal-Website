@@ -5,9 +5,12 @@
 #about{
   color: #fff;
   padding: 10px 50px 10px 50px;
-  height: 70%;
+  height: 75%;
   background: rgba(0,0,0,0.7);
   margin: 0 30% 0 30%;
+}
+#about p {
+  padding: 0 10%;
 }
 #self{
   height: 200px;
@@ -51,7 +54,6 @@
 	grid-template-areas:
 	"html java light
 	htmltxt javatxt lighttxt";
-
 }
 #skills div{
 	padding: 10% 10% 0 10%;
@@ -114,6 +116,9 @@
 	text-align: center;
 	font-size: 250%;
 }
+#social {
+  padding-bottom: 15px;
+}
 #social i {
   margin: 3%;
   width: 20px;
@@ -135,12 +140,50 @@
   border: solid #fff 2px;
 }
 #aboutme{
-  margin: 3.5% 10% 0 0;
+  margin: 1% 5% 0 0;
 }
 #resume{
-  margin: 3.5% 5% 0 0;
+  margin: 1% 5% 0 0;
 }
 #first{
   text-decoration: none;
   color: #fff;
+}
+
+@media (max-width: 1200px){
+  #about {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 800px){
+  #skills{
+    height: auto;
+  	display: flex;
+    flex-direction: column;
+  }
+  #blogs{
+    display: flex;
+    flex-direction: column;
+  }
+  #featured{
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 600px){
+  body{
+    font-size: 0.9em;
+  }
+  #about{
+    width: 70%;
+    height: 80%;
+  }
+  #social{
+    display: flex;
+    justify-content: space-around;
+  }
+  #about_resume{
+    display: flex;
+    justify-content: space-around;
+  }
 }

@@ -1,22 +1,28 @@
-#body{
+/* #body{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
   "main aside";
   grid-column-gap: 10%;
   margin: 75px 100px 75px 100px;
+} */
+#body{
+  display: flex;
+  margin: 75px 100px;
+  justify-content: center;
 }
-
 #main{
   grid-area: main;
   padding: 30px 20px 10px 20px;
   margin-top: -1.5em;
+  flex: 3;
 }
 #aside{
  grid-area: aside;
+ flex: 1;
 }
 #pic1{
-	height: 400px;
+	width: 90%;
 	display: block;
 	margin: 0 auto;
 }
@@ -40,4 +46,13 @@
   background: #fff;
   font-weight: bold;
   border: 1px solid #5ED2DE;
+}
+@media (max-width: 1000px) {
+  #body{
+    display: flex;
+    flex-direction: column;
+  }
+  #pic1 {
+    width: 100%;
+  }
 }

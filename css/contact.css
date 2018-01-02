@@ -76,3 +76,13 @@ input[type=submit]:hover {
     border: 1px solid #5ED2DE;
     color: #5ED2DE;
 }
+@media (max-width: 1000px) {
+  #contact {
+    display: flex;
+    flex-direction: column;
+  }
+  #input {
+    display: block;
+    text-align: center;
+  }
+}
