@@ -12,29 +12,44 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   </head>
   <body>
     <header>
       <div class ="wrapper">
         <a href="index.html"><img src="./img/logo.png" id="logo"></a>
-        <nav>
+        <nav id="main_nav">
           <ul>
             <li class="current"><a href="index.html"> HOME</a></li>
-            <li><a href="blog.html"> BLOG</a></li>
             <li><a href="contact.html"> CONTACT</a></li>
             <li><a href="about.html"> ABOUT </a></li>
           </ul>
           </nav>
+          <nav id="collapse_nav" class="navbar navbar-inverse">
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                  <li class="dropdown">
+                   <i id="down" class="fa fa-bars"></i></a>
+                    <ul id="dropdown" class="dropdown-menu">
+                      <a href="index.html"><li>HOME</li></a>
+                      <li><a href="contact.html">CONTACT</a></li>
+                      <li><a href="about.html">ABOUT</a></li>
+                    </ul>
+                  </li>
+              </div>
+          </nav>
+         </div>
         </header>
-      </div>
         <div id="inside_pic" >
 
             <div id="about">
               <img id="self" src="./img/self.png">
               <h2> Hi! I'm Kevin Liang </h2>
-              <p> I indulge in anything online or tech-related and I always strive to
-learn more about each software that I come in contact to. Most of my interests fall under
-the domain of Java, Python, EagleCAD, and AutoCAD, but I have dabbled with Blender, Visual Basic, and C++.</p>
+              <p> I love tinkering in anything tech-related and learning new things. Most of my interests fall under
+the domain of Java, Python, HTML/CSS, and NodeJS</p>
             <div class="inside_bottom">
               <div id="social">
                 <a target="_blank" href="https://www.facebook.com/kevin.liang.1044"><i id="facebook" class="fa fa-facebook"> </i></a>
@@ -67,21 +82,6 @@ coding from scratch and the fulfillment of learning how to design my personal we
 	<p id='lighttxt'> I have an understanding of Javascript and PHP for back-end development. The contact form for this website uses PHP for
   input validation,connecting to a MySQL database, and inserting the information.</p>
 	</div>
-	</div>
-<h1 id="banner"> Blog Posts </h1>
-	<div id="blogs">
-	  <div id="featured">
-            <h2> Featured Post: First! </h2>
-            <p>Hi everybody, I'm Kevin Liang.
-I have always dabbled around with computers here and there but only recently have I picked up programming. In middle school, my friend's dad introduced him to Small Basic,
-one of perhaps the less popular programming languages. He brought the idea up to me and I loved programming from the start, mainly because of its ability to control computers
-in a precise way, with nothing more and nothing less than you command it. Fast forward to high school, I took a programming class with a teacher that had less than satisfactory...</p>
-              <a class="button" id="readMore" href="./blog/First!.html"> Read More </a>
-            </div>
-		<div id="prev">
-			<h2> Previous Posts </h2>
-        <a href="./blog/First!.html" id="first"><p> First! 8/12/17 </p></a>
-		</div>
 	</div>
   </body>
 </html>

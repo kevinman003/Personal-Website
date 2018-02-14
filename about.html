@@ -4,24 +4,38 @@
     <meta charset="utf-8">
     <title>Kevin Liang | About</title>
     <link rel="stylesheet" href="./css/about.css">
-	<link rel="stylesheet" href="./css/nav.css">
+	<link rel="stylesheet" href="./css/nav_contact.css">
     <link href="https://fonts.googleapis.com/css?family=Pavanam" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <link href="./img/icon.ico" rel="icon" type="image/ico">
   </head>
   <body>
 
-    <header>
+     <header>
       <div class ="wrapper">
         <a href="index.html"><img src="./img/logo.png" id="logo"></a>
-        <nav id="nav1">
+        <nav id="main_nav">
           <ul>
-            <li ><a href="index.html"> HOME</a></li>
-            <li><a href="blog.html"> BLOG</a></li>
-            <li ><a href="contact.html"> CONTACT</a></li>
+            <li><a href="index.html"> HOME</a></li>
+            <li><a href="contact.html"> CONTACT</a></li>
             <li class="current"><a href="about.html"> ABOUT </a></li>
           </ul>
           </nav>
+          <nav id="collapse_nav" class="navbar navbar-inverse">
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                  <li class="dropdown">
+                   <i id="down" class="fa fa-bars"></i></a>
+                    <ul id="dropdown" class="dropdown-menu">
+                      <a href="index.html"><li>HOME</li></a>
+                      <li><a href="contact.html">CONTACT</a></li>
+                      <li><a href="about.html">ABOUT</a></li>
+                    </ul>
+                  </li>
+              </div>
+          </nav>
+         </div>
         </header>
         <div id="top">
         <img id="pic" src="./img/self.png">
